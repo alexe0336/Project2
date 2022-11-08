@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef HEADER_H
+#define HEADER_H
+
+void mainmenu();
+
+struct node
+{
+    char productName[];
+    char productUnit[];
+    int productPrice;
+    int productQuantity;
+
+    struct node *next;
+};
+
+#endif
